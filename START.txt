@@ -1,0 +1,2 @@
+cd D:\Documentos_Traker\Documents\WEB\suv\2022B\p2\utstal
+npm start
