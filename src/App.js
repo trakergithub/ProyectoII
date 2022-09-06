@@ -1,29 +1,28 @@
-import logo from './logo.svg';
+import logo from './img/logo.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Sacramento&display=swap" rel="stylesheet"></link>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p class="titulo">
+          Utstal
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-    
-        <div className="container">
-          <h1 className="title">
-              Hello world <span aria-label="emoji" role="img">🔥</span>
-          </h1>
-          <input type="text" className="new-task"/>
-        </div>
+        <span class="texto">
+          <em>
+          Todos los días tendrás que tomar miles de decisiones
+          <br></br>
+          y siempre tendrás más de una alternativa 
+          <br></br>
+          y entre ellas esta vivir en paz.
+          </em>
+          <br></br>
+          Bienvenido acabas de tomar tu primera decisión.
+          <br></br>
+          Entrar
+        </span>
       </header>
     </div>
   );
