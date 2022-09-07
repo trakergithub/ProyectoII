@@ -8,10 +8,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .Spin {
     animation: App-logo-spin infinite 200s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -69,8 +70,17 @@ body {
   font-family: Sacramento;
   font-size: 150px;
   margin: 0px;
+  padding: 10px;
+  line-height:70px;
 }
 
 .texto{
   font-family:'Baloo 2';
+}
+.Boton{
+  border: 1px solid #1ab2f5;
+  background-color: #1396cf;
+  border-radius: 10px;
+  padding: 5px;
+  cursor:pointer;
 }
