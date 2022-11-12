@@ -1,43 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#FFF" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="
+        Web site created using create-react-app,
+        Sistema de Universidad Virtual,
+        Licenciatura en Desarrollo de Sistemas Web,
+        Proyecto II,
+        Healt & Care
+      "
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+    <!-- Vendor Java Files -->
+    <script src="assets/vendor/bootstrap/js/jquery.slim.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    
+    <title>Healt&Care</title>
   </head>
   <body>
+   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button>
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+  
+      <nav id="navbar" class="navbar nav-menu">
+        <ul>
+          <li><a href="#login" class="nav-link" data-toggle="modal" data-target="#ModalLogin"><i class="bi bi-person"></i> <span>Iniciar Sesion</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto"><i class="bi bi-house"></i> <span>Inicio</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bi bi-info-circle"></i> <span>Acerca de nosotros</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-envelope"></i> <span>Contacto</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+  
+    </header><!-- End Header -->
+    
+      <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <img src="%PUBLIC_URL%/logo.png" width="100px" />
+        <h1>Healt & Care</h1>
+        <span class="texto">
+          <em>
+          Todos los días tendrás que tomar miles 
+          <br/>
+          de decisiones
+          y siempre tendrás más
+          <br/>
+          de una alternativa y entre ellas esta
+          <br/>
+          vivir sanamente.
+          </em>
+          <br/><br/>
+          Bienvenido 
+          <br/>
+          por estar aqui acabas de tomar tu primera decisión.
+        </span>
+      </div>
+    </section><!-- End Hero -->
+    
+       <!-- ======= About Section ======= -->
+       <section id="about" class="d-flex flex-column justify-content-center">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Acerca de Healt & Care</h2>
+          </div>
+          <center>
+            <div style="max-width:600px; text-align: justify; line-height:30px; justify-content: center;align-items: center;">
+              <center>
+                <img src="%PUBLIC_URL%/logo.png" width="100px" />
+              </center>
+              <br>
+              Nacimos de una idea; la idea de acercarnos a un mundo de organización y optimización de tareas, hoy en día un gran porcentaje 
+              de la población mundial cuenta con acceso a Internet, ya no buscan a un especialista por medio de una guía telefónica y el tiempo 
+              que disponen para cuidar de la salud es cada vez menor, pero no por eso podemos dejar de hacerlo.
+              <br><br>
+              Gracias a esta necesidad que creamos Healt&Care.
+              <br><br>
+              En Healt&Care buscamos ayudarte a conectar con nuestros mejores especialistas con la facilidad de un simple Click desde la comodidad 
+              de tu casa; y si aún no estás seguro de lo que necesitas, también tenemos un foro de preguntas, donde encontrarás una variedad de 
+              respuestas para ayudarte a identificar tu problema.
+            </center>
+          </div>
+  
+  
+        </div>
+      </section><!-- End About Section -->
+  
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@healtandcare.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Tels:</h4>
+                <p><a href="tel:5554280940">33 333 3333</a></p>
+                <p><a href="tel:5554280940">33 333 3333</a></p>
+              </div>
+              
+              <div class="phone">
+                <i class="bi bi-whatsapp"></i>
+                <h4>Whatsapp:</h4>
+                <p><a href="http://wa.me/52333333333?text=Hola%20buen%20dia" target="_blank">click aqui</a></p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje ah sido enviado. nos pondremos en contacto a la brevedad posible.</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Healt & Care</h3>
+      <p>Trabajamos para tu salud y bienestar.</p>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Healt & Care</span></strong>. Todos los derechos reservados
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
+  <!-- The Modal -->
+<div class="modal fade" id="ModalLogin">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"> <i class="bi bi-person-circle"></i> Login</h4>
+        <a class="btn btn-sm btn-default" style="border-radius:20px;" data-dismiss="modal"><i class="bi bi-x-lg"></i></a>
+      </div>
+
+      <!-- Modal body -->
+      <form action="forms/login.php" method="post" role="form" class="php-email-form"></form>
+      <div class="modal-body">
+          <div class="row">
+            <div class="col-md-2 form-group">
+              <h2><i class="bi bi-person-check-fill"></i></h2>
+            </div>
+            <div class="col-md-10 form-group">
+              <input type="text" name="user" class="form-control" id="user" placeholder="Usuario" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-2 form-group">
+              <h2><i class="bi bi-key-fill"></i></h2>
+            </div>
+            <div class="col-md-10 form-group">
+              <input type="password" name="password" class="form-control" id="password" placeholder="Constraseña" required>
+            </div>
+          </div>
+        
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-sm btn-success" data-dismiss="modal"><i class="bi bi-check-lg"></i> Entrar</button>
+        <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal"><i class="bi bi-x-lg"></i> Cancelar</button>
+      </div>
+    </form>
+
+    </div>
+  </div>
+</div>
+    
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    
+        <!-- Vendor Java Files -->
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
   </body>
 </html>
