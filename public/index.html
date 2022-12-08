@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/logo.ico" />
+    <link rel="icon" href="logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#FFF" />
     <meta
@@ -15,8 +15,8 @@
         Healt & Care
       "
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <link rel="manifest" href="manifest.json" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -28,11 +28,6 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    
-    <!-- Vendor Java Files -->
-    <script src="assets/vendor/bootstrap/js/jquery.slim.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -41,26 +36,28 @@
     <title>Healt&Care</title>
   </head>
   <body>
-   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button>
+   <!--<button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex flex-column justify-content-center">
   
       <nav id="navbar" class="navbar nav-menu">
         <ul>
-          <li><a href="#login" class="nav-link" data-toggle="modal" data-target="#ModalLogin"><i class="bi bi-person"></i> <span>Iniciar Sesion</span></a></li>
+          <li><a href="#login" class="scrollto" data-toggle="modal" data-target="#ModalLogin"><i class="bi bi-person"></i> <span>Iniciar Sesion</span></a></li>
           <li><a href="#hero" class="nav-link scrollto"><i class="bi bi-house"></i> <span>Inicio</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bi bi-info-circle"></i> <span>Acerca de nosotros</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bi bi-info-circle"></i> <span>Acerca de H&C</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-envelope"></i> <span>Contacto</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
   
     </header><!-- End Header -->
+
+    <section id="login" class="login"></section>
     
       <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center">
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <img src="%PUBLIC_URL%/logo.png" width="100px" />
+        <img src="logo.png" width="100px" />
         <h1>Healt & Care</h1>
         <span class="texto">
           <em>
@@ -89,9 +86,9 @@
             <h2>Acerca de Healt & Care</h2>
           </div>
           <center>
-            <div style="max-width:600px; text-align: justify; line-height:30px; justify-content: center;align-items: center;">
+            <div class="acercade">
               <center>
-                <img src="%PUBLIC_URL%/logo.png" width="100px" />
+                <img src="logo.png" width="100px" />
               </center>
               <br>
               Nacimos de una idea; la idea de acercarnos a un mundo de organización y optimización de tareas, hoy en día un gran porcentaje 
@@ -187,67 +184,113 @@
       <h3>Healt & Care</h3>
       <p>Trabajamos para tu salud y bienestar.</p>
       <div class="copyright">
-        &copy; Copyright <strong><span>Healt & Care</span></strong>. Todos los derechos reservados
+        <strong><span>Healt & Care</span></strong>. Todos los derechos reservados
       </div>
     </div>
+    <em>Powered by </em>
+    <a href="#"  data-toggle="tooltip" title="Healt&Care"><img width="20px" alt="Healt&Care" src="assets/img/hc.ico" /></a>&nbsp;
+    <a href="https://www.udgvirtual.udg.mx/" target="_blank" data-toggle="tooltip" title="Sistema de Universidad Virtual"><img width="20px" alt="Sistema de Universidad Virtual" src="assets/img/suv.png" /></a>&nbsp;
+    <a href="https://es.reactjs.org/" target="_blank" data-toggle="tooltip" title="React"><img width="20px" alt="React" src="assets/img/react.ico" /></a>&nbsp;
+    <a href="https://getbootstrap.com/" target="_blank" data-toggle="tooltip" title="Bootstrap"><img width="20px" alt="Bootstrap" src="assets/img/bootstrap.ico" /></a>&nbsp;
+    <a href="https://bootstrapmade.com/" target="_blank" data-toggle="tooltip" title="Bootstrapmade"><img width="20px" alt="Bootstrapmade" src="assets/img/bootstrapmade.png" /></a>&nbsp;
+    <a href="https://www.flaticon.es/" target="_blank" data-toggle="tooltip" title="Flaticon"><img width="20px" alt="Flaticon" src="assets/img/flaticon.ico" /></a>&nbsp;
+    <a href="https://pixabay.com/es/" target="_blank" data-toggle="tooltip" title="Pixabay"><img width="20px" alt="Pixabay" src="assets/img/pixabay.png" /></a>&nbsp;
   </footer><!-- End Footer -->
   
   <!-- The Modal -->
-<div class="modal fade" id="ModalLogin">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
+  <div class="modal fade" id="ModalLogin">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title"> <i class="bi bi-person-circle"></i> Login</h4>
-        <a class="btn btn-sm btn-default" style="border-radius:20px;" data-dismiss="modal"><i class="bi bi-x-lg"></i></a>
-      </div>
+        <!-- Modal Header -->
+        <div class="modal-header centrado">
+          <div class="login-header centrado"><i class="bi bi-person-circle"></i></div>
+        </div>
 
-      <!-- Modal body -->
-      <form action="forms/login.php" method="post" role="form" class="php-email-form"></form>
-      <div class="modal-body">
-          <div class="row">
-            <div class="col-md-2 form-group">
-              <h2><i class="bi bi-person-check-fill"></i></h2>
-            </div>
-            <div class="col-md-10 form-group">
-              <input type="text" name="user" class="form-control" id="user" placeholder="Usuario" required>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-2 form-group">
-              <h2><i class="bi bi-key-fill"></i></h2>
-            </div>
-            <div class="col-md-10 form-group">
-              <input type="password" name="password" class="form-control" id="password" placeholder="Constraseña" required>
-            </div>
-          </div>
+        <!-- Modal body -->
+        <form action="assets/controllers/login.php" method="POST">
+        <div class="modal-body">
         
-      </div>
+          <div class="login-collapse collapse show">
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input type="e-mail" id="user" name="user" class="form-control" placeholder="Correo electronico" autocomplete="off" required>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Constraseña" autocomplete="off" required>
+              </div>
+            </div>
+          </div>
+          <div class="signup-collapse collapse hide">
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Nombre" autocomplete="off">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input type="e-mail" id="user" name="user" class="form-control" placeholder="Correo electronico" autocomplete="off">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Constraseña" autocomplete="off">
+              </div>
+            </div>
+          </div>
+          
+        </div>
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-sm btn-success" data-dismiss="modal"><i class="bi bi-check-lg"></i> Entrar</button>
-        <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal"><i class="bi bi-x-lg"></i> Cancelar</button>
-      </div>
-    </form>
+        <!-- Modal footer -->
+        <div class="modal-footer centrado">
+          <button type="submit" value="submit" class="btn btn-success btn-sm" style="width:40%;"><i class="bi bi-check-lg"></i> <span id="btn-entrar">Entrar</span></button>
+          <button type="reset" value="borrar" class="btn btn-danger btn-sm" 
+            onclick="
+              $('#ModalLogin').modal('hide'); 
+              $('.login-collapse').collapse('show'); 
+              $('.signup-collapse').collapse('hide');
+            " style="width:40%;">
+            <i class="bi bi-x-lg"></i> Cancelar
+          </button>
+          <br>
+          <span class="nota">¿No estas registrado? 
+          <a href="#" 
+            onclick="
+              $('.login-collapse').collapse('hide'); 
+              $('.signup-collapse').collapse('show'); 
+              document.getElementById('btn-entrar').innerHTML='Registrar';
+            ">
+            Registrate
+          </a></span>
+        </div>
+        </form>
 
+      </div>
     </div>
   </div>
-</div>
     
-    
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    
-        <!-- Vendor Java Files -->
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        
+    <!-- Vendor Java Files -->
+    <script src="assets/vendor/bootstrap/js/jquery.slim.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
   </body>
 </html>
